@@ -1,17 +1,6 @@
 ---
 Daily:
-  # Format: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
+  
   items:
   - "260:0:10"
   - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
@@ -27,31 +16,11 @@ Daily:
     hours: 24
     minutes: 30
 
-  # Format: "name:time:amplifier"
-  # Time is in seconds
   effects:
   - "speed:120:2"
 
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
- 
-
 Monthly:
-  # Format: "id:damage:count:name:ench_name:ench_level"
 
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
   items:
   - "260:0:10"
   - "276:0:1:Fallen Withers Sword:weapon_sharpness:5:weapon_knockback:2"
@@ -67,18 +36,74 @@ Monthly:
     hours: 730
     minutes: 30
 
-  # Format: "name:time:amplifier"
-  # Time is in seconds
   effects:
   - "speed:120:2"
   - "strength:120:5"
   - "regeneration:5"
 
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
+Freelancer:
+  
+  items:
+  - "260:0:10"
+  - "272:0:1:Lancers last Hope:weapon_sharpness:2:weapon_knockback:2"
+  helmet: "298:0:1:armor_protection:2"
+  chestplate: "299:0:1:BRONSOS Chestplate:armor_protection:2"
+  leggings: "300:0:1:Pants!:armor_protection:5"
+  boots: "301:0:1:armor_protection:5"
+
+  commands:
+  - "tell {player} Nice! Kit Freelancer! Play more to level up, and maybe unlock Starlancer..? Come back in 6 hours!"
+
+  cooldown:
+    hours: 6
+    minutes: 30
+
+  effects:
+  - "speed:120:2"
+  
+Starlancer:
+  
+  items:
+  - "260:0:10"
+  - "272:0:1:Lancers last Hope:weapon_sharpness:2:weapon_knockback:2"
+  helmet: "314:0:1:armor_protection:2"
+  chestplate: "315:0:1:Midas Chestplate:armor_protection:2"
+  leggings: "316:0:1:Midas Leggings:armor_protection:5"
+  boots: "317:0:1:armor_protection:5"
+
+  commands:
+  - "tell {player} Nice! Kit Starlancer! Play more to level up, and maybe unlock Knight..? Come back in 6 hours!"
+
+  cooldown:
+    hours: 6
+    minutes: 30
+
+  effects:
+  - "speed:120:2"
+  
+ Knight:
+  
+  items:
+  - "260:0:10"
+  - "272:0:1:Queens Vengence:weapon_sharpness:2:weapon_knockback:2"
+  helmet: "314:0:1:armor_protection:2"
+  chestplate: "315:0:1:Queens Protector:armor_protection:2"
+  leggings: "316:0:1:Midas Leggings:armor_protection:5"
+  boots: "317:0:1:armor_protection:5"
+
+  commands:
+  - "tell {player} Nice! Kit Knight! Play more to level up, and maybe unlock Kingsman..? Come back in 6 hours!"
+
+  cooldown:
+    hours: 6
+    minutes: 30
+
+  effects:
+  - "speed:120:2"
+  - "strength:50:1"
+
+
+
 
   
 ...
